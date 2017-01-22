@@ -89,10 +89,10 @@ function updateProjectStructure(elemName, initialState, type) {
 function createTemplates() {
     let filesTemplate = 'exports.files = ';
     let projectStructureTemplate = 'exports.projectStructure = ';
-    let templatesDirPath = __dirname + '/templates/' + newBoilerplateName;
+    let templatesDirPath = __dirname + '/../templates/' + newBoilerplateName;
 
-    if (!fs.existsSync(__dirname + '/templates/')) {
-        fs.mkdirSync(__dirname + '/templates/');
+    if (!fs.existsSync(__dirname + '/../templates/')) {
+        fs.mkdirSync(__dirname + '/../templates/');
     }
 
     filesTemplate  += toSource(filesList);

@@ -3,18 +3,18 @@
   "version": "0.0.1",
   "preferGlobal": "true",
   "bin" : {
-    "boilerplater-create-boilerplate" : "./scan-project.js",
-    "boilerplater-create-project": "./create-new-project.js"
+    "boilerplater-create-boilerplate" : "./source/scan-project.js",
+    "boilerplater-create-project": "./source/create-new-project.js"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/hardwit/boilerplater"
   },
   "description": "Boilerplater can help you to create and save own boilerplates.",
-  "main": "scan-project.js",
+  "main": "source/scan-project.js",
   "scripts": {
-    "start": "node create-new-project.js",
-    "scan": "node scan-project.js"
+    "start": "node source/create-new-project.js",
+    "scan": "node source/scan-project.js"
   },
   "author": "Hardwit",
   "license": "MIT",

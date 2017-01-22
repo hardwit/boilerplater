@@ -19,7 +19,7 @@ askForBoilerplateName.question('Boilerplate name: ', name => {
         return;
     }
 
-    let templatesDirPath = __dirname + '/templates/' + name;
+    let templatesDirPath = __dirname + '/../templates/' + name;
 
     if (!fs.existsSync(templatesDirPath)) {
         console.log('"' + name + '": boilerplate not exist');
