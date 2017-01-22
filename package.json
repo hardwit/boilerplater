@@ -2,6 +2,7 @@
   "name": "boilerplater",
   "version": "0.0.1",
   "preferGlobal": "true",
+  "keywords": ["boilerplate", "boilerplater"],
   "bin" : {
     "boilerplater-create-boilerplate" : "./source/create-new-boilerplate.js",
     "boilerplater-create-project": "./source/create-new-project.js"
