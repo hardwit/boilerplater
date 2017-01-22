@@ -42,7 +42,7 @@ function readDirectory(path, initialState) {
 
                 readDirectory(path + '/' + elem, newState);
             } catch (err) {
-                // console.log(err);
+                console.log(err);
             }
         }
     });
@@ -141,11 +141,3 @@ function removeDirectory(path) {
     }
 };
 
-function createGzip(file) {
-    const gzip = zlib.createGzip();
-    const fs = require('fs');
-    const inp = fs.createReadStream(file);
-    const out = fs.createWriteStream(file + '.gz');
-
-    inp.pipe(gzip).pipe(out);
-};
