@@ -1,10 +1,19 @@
 {
   "name": "boilerplater",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "preferGlobal": "true",
-  "keywords": ["boilerplate", "boilerplater", "toolkit", "tool", "starter", "start", "boilerplates", "generator"],
-  "bin" : {
-    "boilerplater-create-boilerplate" : "./source/create-new-boilerplate.js",
+  "keywords": [
+    "boilerplate",
+    "boilerplater",
+    "toolkit",
+    "tool",
+    "starter",
+    "start",
+    "boilerplates",
+    "generator"
+  ],
+  "bin": {
+    "boilerplater-create-boilerplate": "./source/create-new-boilerplate.js",
     "boilerplater-create-project": "./source/create-new-project.js"
   },
   "repository": {
