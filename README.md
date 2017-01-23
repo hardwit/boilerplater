@@ -1,6 +1,6 @@
 # boilerplater
 
-## What does this do?
+### What does this do?
 
 1. Makes it easy to create and publish new projects from boilerplates that have reusable `files, templates, styles, themes, data etc.`
 
