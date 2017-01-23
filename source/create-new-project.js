@@ -51,11 +51,15 @@ askForBoilerplateName.question('Boilerplate name: ', name => {
 
     console.log('"' + name + '" template selected...' );
 
-    createProject(projectStructure.directories, process.cwd());
+    if (projectStructure.directories) {
+        createProject(projectStructure.directories, process.cwd());
+    }
 
-    projectStructure.files.forEach(function(fileName) {
-        createFile(fileName, filesList[fileName])
-    });
+    if (projectStructure.files) {
+        projectStructure.files.forEach(function (fileName) {
+            createFile(fileName, filesList[fileName])
+        });
+    }
 
     fs.unlinkSync(templatesDirPath + '/files.js');
     fs.unlinkSync(templatesDirPath + '/projectStructure.js');
