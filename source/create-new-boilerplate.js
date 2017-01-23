@@ -130,13 +130,15 @@ function createTemplates() {
 function removeDirectory(path) {
     if( fs.existsSync(path) ) {
         fs.readdirSync(path).forEach(function(file,index){
-            const curPath = path + "/" + file;
-            if(fs.lstatSync(curPath).isDirectory()) {
-                removeDirectory(curPath);
+            const currentPath = path + "/" + file;
+
+            if(fs.lstatSync(currentPath).isDirectory()) {
+                removeDirectory(currentPath);
             } else {
-                fs.unlinkSync(curPath);
+                fs.unlinkSync(currentPath);
             }
         });
+
         fs.rmdirSync(path);
     }
 }

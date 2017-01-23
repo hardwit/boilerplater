@@ -91,6 +91,7 @@ function createFile(fileName, fileText) {
 
     fs.writeFile(fileName, text, function(error) {
         console.log(fileName);
+
         if (error) {
             console.log(error);
             console.log('File ' + fileName + ' not created');
