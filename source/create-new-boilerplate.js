@@ -46,11 +46,11 @@ function readDirectory(path, initialState) {
             }
         }
     });
-};
+}
 
 function updateFilesList(fileName, path) {
     filesList[(path + fileName).slice(process.cwd().length + 1)] = fs.readFileSync(path + fileName).toString('utf8');
-};
+}
 
 function updateProjectStructure(elemName, initialState, type) {
     if (type === 'file') {
@@ -84,7 +84,7 @@ function updateProjectStructure(elemName, initialState, type) {
 
         return newState;
     }
-};
+}
 
 function createTemplates() {
     let filesTemplate = 'exports.files = ';
@@ -125,7 +125,7 @@ function createTemplates() {
 
         console.log(templatesDirPath + '/projectStructure.js.gz successfully created');
     });
-};
+}
 
 function removeDirectory(path) {
     if( fs.existsSync(path) ) {
@@ -139,5 +139,5 @@ function removeDirectory(path) {
         });
         fs.rmdirSync(path);
     }
-};
+}
 

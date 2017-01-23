@@ -14,7 +14,8 @@
   ],
   "bin": {
     "boilerplater-create-boilerplate": "./source/create-new-boilerplate.js",
-    "boilerplater-create-project": "./source/create-new-project.js"
+    "boilerplater-create-project": "./source/create-new-project.js",
+    "boilerplater": "./index.js"
   },
   "repository": {
     "type": "git",
@@ -23,8 +24,7 @@
   "description": "Boilerplater can help you to create and save own boilerplates.",
   "main": "source/create-new-boilerplate.js",
   "scripts": {
-    "start": "node source/create-new-project.js",
-    "scan": "node source/create-new-boilerplate.js"
+    "start": "node index.js"
   },
   "author": "Hardwit",
   "license": "MIT",
